@@ -23,6 +23,8 @@ The script will now queue whatever the most recent youtube video is inside each 
 
 Node will now scrape your most recently played songs off [last.fm], search [youtube] for them, grab the most popular search result for the song you just played, and post it to the hipchat room specified in `vars.js`. Anyone using the client will have your posted messages queued to their current stream of youtube videos.
 
+Thanks to my brother for the powershell version of this / tampermonkey script.
+
 [last.fm]:http://www.last.fm
 [youtube]:http://www.youtube.com
 [enable scrobbling]:http://www.last.fm/help/faq?category=99
