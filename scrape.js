@@ -9,11 +9,12 @@ var _ = require("underscore");
 var API = require("./vars").API;
 var roomID = require("./vars").roomID;
 var lastFM = require("./vars").lastFM;
+var from = require("./vars").from;
 
 var HC = new hipchat(API);
 var params = {
   room: roomID,
-  from: "DJ No Name",
+  from: from,
   color: "green",
 }
 
@@ -66,7 +67,7 @@ function scrape() {
                   page.evaluate(function() {
                     return $("ol.item-section > li:nth-child(1) a")[0].href;
                   }, function(url) {
-                    params.message = "<a href='" + String(url) + "''>" + String(url) + "</a>";
+                    params.message = songIdentifier + " <a href='" + String(url) + "''>" + String(url) + "</a>";
                     HC.postMessage(params, function(data) {
                       console.log("message posted to hipchat!");
                       console.log(params.message);

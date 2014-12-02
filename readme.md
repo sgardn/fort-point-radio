@@ -16,7 +16,7 @@ The script will now queue whatever the most recent youtube video is inside each 
 ###### What's that? You want to DJ too?
 
 - [Enable scrobbling] to last.fm for your spotify account (or what have you)
-- Fill in the appropriate room number, Hipchat API key, and [last.fm] scrobbling feed in `vars.js`
+- Fill in the appropriate room number, Hipchat API key, and [last.fm] scrobbling feed in `vars.js` (use `example-vars.js` as a template)
 - `npm install` this repo
 - `node scrape.js`
 - Listen to music using spotify
